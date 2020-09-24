@@ -15,7 +15,7 @@
 
 display_usage() { 
 	echo "This script must be run with super-user privileges." 
-  echo -e "\nUsage: $0 [arguments] \n" 
+  echo -e "\nUsage: $0 [machine_ip_address] \n" 
 } 
 # Get exported IP Adreess 
 # if less than two arguments supplied, display usage 
@@ -103,8 +103,6 @@ prepare() {
   echo 1>"env.ok"
 
 }
-
-exit 0
 
 
 if [ ! -e env.ok ]; then
